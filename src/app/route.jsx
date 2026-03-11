@@ -43,21 +43,37 @@
 //  ]);
 
 
-import { createBrowserRouter } from "react-router-dom";
-import DashboardLayout from "./layout/dashboardlayout";  // Capital D
+// import { createBrowserRouter } from "react-router-dom";
+// import DashboardLayout from "./layout/dashboardlayout";  // Capital D
+// import Home from "../Pages/Home/Home";
+// function Home() {
+//   return (
+//     <h1 className="text-white text-3xl">
+//       Home Page Working ✅
+//     </h1>
+//   );
+// }
 
-function Home() {
-  return (
-    <h1 className="text-white text-3xl">
-      Home Page Working ✅
-    </h1>
-  );
-}
+// export const router = createBrowserRouter([
+//   {
+//     path: "/",
+//     element: <DashboardLayout />,   // Capital here also
+//     children: [
+//       {
+//         index: true,
+//         element: <Home />,
+//       },
+//     ],
+//   },
+// ]);
+import { createBrowserRouter } from "react-router-dom";
+import DashboardLayout from "./layout/DashboardLayout";
+import Home from "../Pages/Home/Home";
 
 export const router = createBrowserRouter([
   {
     path: "/",
-    element: <DashboardLayout />,   // Capital here also
+    element: <DashboardLayout />,
     children: [
       {
         index: true,

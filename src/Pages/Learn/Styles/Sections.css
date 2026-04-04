@@ -1,0 +1,1523 @@
+/* ------------------------- HERO SECTION ----------------------- */
+.hero-section {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  padding: 0 20px;
+  background: radial-gradient(circle at center, #0b0f19, #020617);
+  overflow: hidden;
+  font-family: Poppins;
+}
+
+.hero-content {
+  max-width: 850px;
+  position: relative;
+  z-index: 1;
+  animation: fadeUp 1s ease forwards;
+  opacity: 0;
+}
+
+@keyframes fadeUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  background: linear-gradient(90deg, #60a5fa, #a78bfa);
+  -webkit-background-clip: text;   /* for Chrome/Safari */
+  background-clip: text;           /* standard property */
+  -webkit-text-fill-color: transparent;
+  color: transparent;              /* fallback */
+}
+
+.hero-section p {
+  font-size: 1rem;
+  color: #9ca3af;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.hero-btn {
+  padding: 14px 32px;
+  font-size: 1rem;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+  transition: all 0.3s ease;
+}
+
+.hero-btn:hover {
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 10px 30px rgba(99, 102, 241, 0.5);
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: rgba(99, 102, 241, 0.25);
+  filter: blur(150px);
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 0;
+}
+
+
+/* ------------------------- ROADMAP SECTION ----------------------- */
+.roadmap-section {
+  padding: 140px 40px;
+  text-align: center;
+  background: #020617;
+  font-family: Poppins;
+}
+
+.roadmap-title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.roadmap-subtitle {
+  color: #9ca3af;
+  margin-bottom: 60px;
+  font-size: 1rem;
+}
+
+/* Container */
+.roadmap-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Connecting Line */
+.roadmap-container::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 2%;
+  width: 95%;
+  height: 2px;
+  background: #1f2937;
+  z-index: 0;
+}
+
+/* Each Step */
+.roadmap-step {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+/* Circle */
+.step-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #111827;
+  border: 2px solid #3b82f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 10px;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+/* Label */
+.step-label {
+  font-size: 0.9rem;
+  color: #d1d5db;
+}
+
+/* Hover Effects */
+.roadmap-step:hover .step-circle {
+  background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+  transform: scale(1.1);
+  box-shadow: 0 0 15px rgba(99, 102, 241, 0.6);
+}
+
+.roadmap-step:hover .step-label {
+  color: #ffffff;
+}
+
+
+
+/* ------------------------- BASICS SECTION ----------------------- */
+.basics-section {
+  padding: 90px 40px;
+  background: #020617;
+  color: white;
+  font-family: Poppins;
+}
+
+/* Header */
+.basics-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.basics-header h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.basics-header p {
+  color: #9ca3af;
+}
+
+/* Content Layout */
+.basics-content {
+  /* display: flex;
+  gap: 50px;
+  max-width: 1100px;
+  margin: 0 auto 60px;
+  align-items: center; */
+  display: flex;
+  gap: 60px;
+  max-width: 1100px;
+  margin: 0 auto 70px;
+  align-items: center;
+  font-size: 1rem;
+}
+
+/* Left Text */
+.basics-text {
+  flex: 1;
+  font-size: 0.9rem;
+}
+
+.content-block {
+  margin-bottom: 25px;
+}
+
+.content-block h3 {
+  margin-bottom: 5px;
+}
+
+.content-block p {
+  color: #d1d5db;
+}
+
+/* Right Visual */
+.basics-visual {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.visual-box {
+  width: 100%;
+  height: 280px;
+  border-radius: 16px;
+  background: radial-gradient(circle, #111827, #020617);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #1f2937;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Extra Section */
+.basics-extra {
+  display: flex;
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.time-evolution {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+.clock {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid #374151;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.analog {
+  animation: fadeIn 1s ease forwards;
+}
+
+.hand {
+  position: absolute;
+  background: #60a5fa;
+  transform-origin: bottom center;
+}
+
+.hour {
+  width: 3px;
+  height: 20px;
+  bottom: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: rotateHour 8s linear infinite;
+}
+
+.minute {
+  width: 2px;
+  height: 28px;
+  bottom: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: rotateMinute 4s linear infinite;
+}
+
+
+.digital {
+  border-radius: 10px;
+  font-size: 14px;
+  width: 110px;
+  animation: fadeIn 2s ease forwards;
+  color: #22c55e;
+}
+
+
+.atomic {
+  border-radius: 10px;
+  font-size: 14px;
+  width: 130px;
+  color: #8b5cf6;
+  animation: atomicGlow 1.5s infinite alternate;
+}
+
+@keyframes rotateMinute {
+  from { transform: translateX(-50%) rotate(0deg); }
+  to { transform: translateX(-50%) rotate(360deg); }
+}
+
+@keyframes rotateHour {
+  from { transform: translateX(-50%) rotate(0deg); }
+  to { transform: translateX(-50%) rotate(360deg); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes atomicGlow {
+  from {
+    box-shadow: 0 0 5px rgba(139, 92, 246, 0.3);
+  }
+  to {
+    box-shadow: 0 0 5px rgba(139, 92, 246, 0.9);
+  }
+}
+
+
+
+/* ------------------------- ATOMIC PHYSICS SECTION ----------------------- */
+.atomic-section {
+  padding: 90px 40px;
+  background: #020617;
+  color: white;
+  font-family: Poppins;
+}
+
+/* Header */
+.atomic-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.atomic-header h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.atomic-header p {
+  color: #9ca3af;
+}
+
+/* Layout */
+.atomic-content {
+  display: flex;
+  gap: 60px;
+  max-width: 1100px;
+  margin: 0 auto 70px;
+  align-items: center;
+}
+
+/* Left */
+.atomic-text {
+  flex: 1;
+  font-size: 0.9rem;
+}
+
+.basics-visual {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.visual-box {
+  width: 100%;
+  height: 280px;
+  border-radius: 16px;
+  background: radial-gradient(circle, #111827, #020617);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #1f2937;
+  position: relative;
+  overflow: hidden;
+}
+
+
+/* Right Visual */
+.atomic-visual {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+/* ENERGY DIAGRAM */
+.energy-diagram {
+  position: relative;
+  width: 220px;
+  height: 260px;
+}
+
+/* LEVELS */
+.level {
+  width: 140px;
+  height: 2px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(to right, transparent, #6366f1, transparent);
+  box-shadow: 0 0 10px rgba(99, 102, 241, 0.6);
+}
+
+.level1 { top: 50px; }
+.level2 { top: 120px; }
+.level3 { top: 190px; }
+
+/* ELECTRONS */
+/* ELECTRONS BASE */
+.electron {
+  width: 10px;
+  height: 10px;
+  background: #60a5fa;
+  border-radius: 50%;
+  position: absolute;
+  box-shadow: 0 0 12px rgba(96, 165, 250, 0.9);
+}
+
+/* DIFFERENT HORIZONTAL POSITIONS */
+.e1 {
+  left: 30%;
+  transform: translateX(-50%);
+  animation: jump1 4s infinite ease-in-out;
+}
+
+.e2 {
+  left: 50%;
+  transform: translateX(-50%);
+  animation: jump2 5s infinite ease-in-out;
+}
+
+.e3 {
+  left: 70%;
+  transform: translateX(-50%);
+  animation: jump3 3.5s infinite ease-in-out;
+}
+/* KEYFRAMES */
+
+/* Bottom ↔ Top */
+@keyframes jump1 {
+  0% { top: 190px; }
+  40% { top: 50px; }
+  50% { top: 50px; }
+  90% { top: 190px; }
+  100% { top: 190px; }
+}
+
+/* Middle ↔ Top */
+@keyframes jump2 {
+  0% { top: 120px; }
+  40% { top: 50px; }
+  50% { top: 50px; }
+  90% { top: 120px; }
+  100% { top: 120px; }
+}
+
+/* Bottom ↔ Middle */
+@keyframes jump3 {
+  0% { top: 190px; }
+  40% { top: 120px; }
+  50% { top: 120px; }
+  90% { top: 190px; }
+  100% { top: 190px; }
+}
+
+/* OPTIONAL: GLOW PULSE WHEN ELECTRON REACHES LEVEL */
+.electron {
+  animation-timing-function: ease-in-out;
+}
+
+.electron::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: rgba(139, 92, 246, 0.2);
+  top: -5px;
+  left: -5px;
+  animation: glowPulse 2s infinite;
+}
+
+@keyframes glowPulse {
+  0% { transform: scale(1); opacity: 0.4; }
+  50% { transform: scale(1.8); opacity: 0; }
+  100% { transform: scale(1); opacity: 0; }
+}
+
+/* TRANSITION PATHS */
+.path {
+  position: absolute;
+  width: 2px;
+  height: 140px;
+  top: 50px;
+  background: linear-gradient(to bottom, transparent, #8b5cf6, transparent);
+  opacity: 0.4;
+}
+
+.p1 { left: 30%; transform: translateX(-50%); }
+.p2 { left: 50%; transform: translateX(-50%); }
+.p3 { left: 70%; transform: translateX(-50%); }
+
+/* Extra */
+.atomic-extra {
+  display: flex;
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+
+
+
+
+/* ------------------------- SPECTROSCOPY SECTION ----------------------- */
+.spectroscopy-section {
+  padding: 90px 40px;
+  background: #020617;
+  color: white;
+  text-align: center;
+  font-family: Poppins;
+}
+
+/* HEADER */
+.spectroscopy-header {
+  margin-bottom: 60px;
+}
+
+.spectroscopy-header h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.spectroscopy-header p {
+  color: #9ca3af;
+}
+
+/* PRISM AREA */
+/* .prism-container {
+  position: relative;
+  height: 200px;
+  margin-bottom: 60px;
+} */
+
+/* LIGHT BEAM */
+/* .light-beam {
+  position: absolute;
+  width: 120px;
+  height: 6px;
+  background: white;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  animation: moveLight 3s infinite linear;
+} */
+
+/* PRISM */
+/* .prism {
+  position: absolute;
+  left: 45%;
+  top: 50%;
+  width: 0;
+  height: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-bottom: 60px solid rgba(200, 200, 255, 0.2);
+  transform: translateY(-50%);
+} */
+
+/* SPECTRUM */
+/* .spectrum {
+  position: absolute;
+  left: 55%;
+  top: 50%;
+  display: flex;
+  gap: 10px;
+  transform: translateY(-50%);
+}
+
+.s-line {
+  width: 6px;
+  height: 80px;
+  border-radius: 3px;
+  opacity: 0;
+  animation: appear 3s infinite;
+}
+
+.violet { background: #8b5cf6; animation-delay: 0.2s; }
+.blue { background: #60a5fa; animation-delay: 0.4s; }
+.cyan { background: #22d3ee; animation-delay: 0.6s; }
+
+@keyframes moveLight {
+  0% { left: 10%; }
+  100% { left: 35%; }
+}
+
+@keyframes appear {
+  0%, 40% { opacity: 0; }
+  60%, 100% { opacity: 1; }
+} */
+
+/* SPECTRA TYPES */
+.spectra-types {
+  display: flex;
+  justify-content: center;
+  gap: 150px;
+  margin-bottom: 60px;
+}
+
+.spectra-card {
+  width: 260px;
+}
+
+.emission-box {
+  height: 120px;
+  background: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.emission-box span {
+  width: 4px;
+  height: 80px;
+  background: #60a5fa;
+  box-shadow: 0 0 10px #60a5fa;
+}
+
+/* ABSORPTION */
+.absorption-box {
+  height: 120px;
+  background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+  position: relative;
+}
+
+.cut {
+  position: absolute;
+  width: 4px;
+  height: 100%;
+  background: black;
+}
+
+.c1 { left: 30%; }
+.c2 { left: 50%; }
+.c3 { left: 70%; }
+
+/* CONTENT CARDS */
+.spectroscopy-cards {
+  display: flex;
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.card {
+  flex: 1;
+  background: #111827;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #1f2937;
+}
+
+/* .card h3 {
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+}
+
+.card p {
+  color: #d1d5db;
+  font-size: 0.9rem;
+} */
+
+.card ul {
+  margin: 10px 0 0 20px;
+  color: #d1d5db;
+  line-height: 1.6;
+  font-size: 0.9rem;
+  list-style-type: disc;
+}
+
+.card li {
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+}
+
+
+/* ------------------------- ADVANCED CONCEPTS SECTION ----------------------- */
+.advanced-section {
+  padding: 90px 40px;
+  background: #020617;
+  color: white;
+  font-family: Poppins;
+}
+
+/* HEADER */
+.advanced-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.advanced-header h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.advanced-header p {
+  color: #9ca3af;
+}
+
+/* ROW STRUCTURE */
+.adv-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 80px;
+  gap: 40px;
+}
+
+.adv-row.reverse {
+  flex-direction: row-reverse;
+}
+
+/* CARD */
+.card {
+  flex: 1;
+  background: #111827;
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid #1f2937;
+  text-align: left;
+}
+
+.card ul {
+  margin: 10px 0 0 20px;
+  color: #d1d5db;
+  line-height: 1.6;
+  font-size: 0.9rem;
+}
+
+/* INSIGHT BOX */
+.insight-box {
+  margin-top: 15px;
+  padding: 10px;
+  background: #0f172a;
+  border-left: 3px solid #22d3ee;
+  font-size: 0.85rem;
+  color: #93c5fd;
+}
+
+/* BASE */
+.visual {
+  flex: 1;
+  height: 180px;
+  border-radius: 12px;
+  background: #0f172a;
+  border: 1px solid #1f2937;
+  position: relative;
+  overflow: hidden;
+}
+
+/* 🔹 1. BLUR → SHARP (DOPPLER PROBLEM) */
+.blur-lines::before {
+  content: "";
+  position: absolute;
+  width: 70%;
+  height: 6px;
+  top: 50%;
+  left: 15%;
+  background: #60a5fa;
+  border-radius: 4px;
+  animation: blurToSharp 3s infinite alternate;
+}
+
+@keyframes blurToSharp {
+  0% {
+    filter: blur(8px);
+    opacity: 0.5;
+  }
+  100% {
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+
+.adv-row .image {
+  flex: 1.1;
+  display: flex;
+  justify-content: center;
+}
+
+/* .adv-row img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 0 5px rgba(56, 189, 248, 0.2);
+} */
+
+
+
+.image.style1 img {
+  /* width: 100%; */
+  max-width: 500px;
+  border-radius: 12px;
+  border: 1px solid rgba(56, 189, 248, 0.4);
+  box-shadow: 0 0 5px rgba(56, 189, 248, 0.3);
+  transition: 0.3s ease;
+}
+
+.image.style1 img:hover {
+  transform: scale(1.04);
+  box-shadow: 0 0 10px rgba(56, 189, 248, 0.6);
+}
+
+
+.image.style2 {
+  padding: 12px;
+  border-radius: 16px;
+  /* background: rgba(255, 255, 255, 0.05); */
+  /* backdrop-filter: blur(10px); */
+}
+
+.image.style2 img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  border: 1px solid rgba(56, 189, 248, 0.4);
+  box-shadow: 0 0 5px rgba(56, 189, 248, 0.3);
+  transition: 0.3s ease;
+}
+
+.image.style2 img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(56, 189, 248, 0.6);
+}
+
+.image.style3 {
+  padding: 10px;
+  /* background: #020617; */
+  /* border: 2px solid #38bdf8; */
+  border-radius: 10px;
+}
+
+.image.style3 img {
+  width: 100%;
+  max-width: 380px;
+  border-radius: 6px;
+  border: 1px solid rgba(56, 189, 248, 0.4);
+  box-shadow: 0 0 5px rgba(56, 189, 248, 0.3);
+  transition: 0.3s ease;
+}
+
+.image.style3 img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 10px rgba(56, 189, 248, 0.6);
+}
+
+
+/* ------------------------- LASER SYSTEMS SECTION ----------------------- */
+.laser-section {
+  padding: 90px 40px;
+  background: #020617;
+  color: white;
+  text-align: center;
+  font-family: Poppins;
+}
+
+/* HEADER */
+.laser-header {
+  margin-bottom: 35px;
+}
+
+.laser-header h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.laser-header p {
+  color: #9ca3af;
+}
+
+/* LASER VISUAL */
+/* .laser-visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.laser-source,
+.laser-target {
+  padding: 15px 25px;
+  border-radius: 10px;
+  background: #111827;
+  border: 1px solid #1f2937;
+  font-size: 0.9rem;
+} */
+
+/* LASER BEAM */
+/* .laser-beam {
+  display: flex;
+  gap: 5px;
+}
+
+.laser-beam span {
+  width: 6px;
+  height: 60px;
+  background: #22d3ee;
+  border-radius: 3px;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+.laser-beam span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.laser-beam span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    height: 40px;
+    opacity: 0.5;
+  }
+  50% {
+    height: 70px;
+    opacity: 1;
+  }
+} */
+
+
+.image.ls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image.ls img {
+  /* width: 100%; */
+  max-width: 700px;
+  border-radius: 12px;
+  margin-bottom: 40px;
+  border: 1px solid rgba(56, 189, 248, 0.4);
+  box-shadow: 0 0 5px rgba(56, 189, 248, 0.3);
+  transition: 0.3s ease;
+}
+
+.image.ls img:hover {
+  transform: scale(1.04);
+  box-shadow: 0 0 10px rgba(56, 189, 248, 0.6);
+}
+
+
+/* FEATURE BOXES */
+.laser-features {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 50px;
+}
+
+.laser-box {
+  width: 240px;
+  padding: 20px;
+  border-radius: 12px;
+  background: #111827;
+  border: 1px solid #1f2937;
+  text-align: left;
+}
+
+.laser-box h3 {
+  margin-bottom: 8px;
+}
+
+.laser-box p {
+  font-size: 0.85rem;
+  color: #9ca3af;
+}
+
+/* Slight color differentiation */
+.vcsel { border-left: 3px solid #22d3ee; }
+.activation { border-left: 3px solid #60a5fa; }
+.characterization { border-left: 3px solid #8b5cf6; }
+
+/* CONTENT CARDS */
+.laser-cards {
+  display: flex;
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.card {
+  flex: 1;
+  background: #111827;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #1f2937;
+}
+
+.card ul {
+  margin: 10px 0 0 20px;
+  color: #d1d5db;
+  line-height: 1.6;
+  font-size: 0.9rem;
+}
+
+.card li {
+  margin-bottom: 8px;
+}
+
+
+
+
+
+/* ------------------------- DETECTION SECTION ----------------------- */
+/* MAIN */
+.detection-section {
+  padding: 90px 40px;
+  background: #020617;
+  color: white;
+  font-family: Poppins;
+}
+
+/* CONTAINER SPLIT */
+.detection-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* LEFT SIDE */
+.detection-left {
+  flex: 1;
+}
+
+.detection-left h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.detection-left p {
+  color: #9ca3af;
+  margin-bottom: 30px;
+}
+
+/* MINI CARDS */
+.mini-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.mini-card {
+  background: #111827;
+  padding: 18px;
+  border-radius: 12px;
+  border: 1px solid #1f2937;
+}
+
+.mini-card ul {
+  margin: 10px 0 0 18px;
+  font-size: 0.9rem;
+  color: #d1d5db;
+}
+
+/* RIGHT SIDE */
+.detection-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+/* ADD SPACE BETWEEN TOP & BOTTOM */
+.detection-cards {
+  margin-top: 60px;
+  display: flex;
+  gap: 30px;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* HEADER CENTER */
+.detection-header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 60px auto;
+}
+
+.detection-header h2 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.detection-header p {
+  color: #9ca3af;
+  font-size: 1rem;
+}
+
+/* .detection-image {
+  max-width: 420px;
+  border-radius: 14px;
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  box-shadow: 0 0 15px rgba(56, 189, 248, 0.2);
+  transition: 0.4s ease;
+}
+
+.detection-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(56, 189, 248, 0.5);
+} */
+
+
+.detection-right {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.detection-right::before {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  background: #22d3ee;
+  filter: blur(120px);
+  opacity: 0.15;
+  z-index: 0;
+}
+
+.detection-image {
+  position: relative;
+  z-index: 1;
+}
+
+
+
+/* ------------------------- SYSTEM INTEGRATION SECTION ----------------------- */
+.integration-section {
+  padding: 90px 40px;
+  background: #020617;
+  color: white;
+  font-family: Poppins;
+}
+
+/* HEADER */
+.integration-header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 50px auto;
+}
+
+.integration-header h2 {
+  font-size: 2.3rem;
+  margin-bottom: 10px;
+}
+
+.integration-header p {
+  color: #9ca3af;
+}
+
+/* 🔥 FLOW DIAGRAM */
+.integration-flow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: 0 auto 50px auto;
+  gap: 15px;
+}
+
+.flow-box {
+  background: #111827;
+  border: 1px solid #1f2937;
+  padding: 12px 18px;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  transition: 0.3s ease;
+}
+
+.flow-box:hover {
+  transform: translateY(-5px);
+  border-color: #22d3ee;
+}
+
+.highlight {
+  background: #0f172a;
+  border: 1px solid #22d3ee;
+  box-shadow: 0 0 5px rgba(34, 211, 238, 0.4);
+}
+
+.arrow {
+  color: #22d3ee;
+  font-size: 1.2rem;
+}
+
+/* 🔥 MIDDLE SECTION */
+.integration-middle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  max-width: 1100px;
+  margin: 0 auto 50px auto;
+}
+
+/* .integration-image img {
+  max-width: 400px;
+  border-radius: 12px;
+  border: 1px solid rgba(34, 211, 238, 0.3);
+} */
+
+.integration-text h3 {
+  margin-bottom: 10px;
+}
+
+.integration-text p {
+  color: #9ca3af;
+}
+
+/* 🔥 CARDS */
+.integration-cards {
+  display: flex;
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.integration-card {
+  flex: 1;
+  background: #111827;
+  padding: 20px;
+  border-radius: 14px;
+  border: 1px solid #1f2937;
+  transition: 0.3s ease;
+}
+
+.integration-card:hover {
+  transform: translateY(-6px);
+  border-color: #22d3ee;
+}
+
+.integration-card ul {
+  margin-top: 10px;
+  margin-left: 18px;
+  color: #d1d5db;
+  font-size: 0.9rem;
+  list-style-type: disc;
+}
+
+.integration-card li {
+  margin-bottom: 8px;      /* spacing between points */
+}
+
+
+
+
+
+
+.applications-section {
+  padding: 90px 40px;
+  background: #020617;
+  color: white;
+  font-family: Poppins;
+}
+
+/* HEADER */
+.realworld-header {
+  text-align: center;
+  max-width: 750px;
+  margin: 0 auto 60px auto;
+}
+
+.realworld-header h2 {
+  font-size: 2.4rem;
+  margin-bottom: 10px;
+}
+
+.realworld-header p {
+  color: #9ca3af;
+}
+
+/* 🔥 USAC SECTION */
+.usac-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  max-width: 1100px;
+  margin: 0 auto 60px auto;
+}
+
+.usac-text {
+  flex: 1;
+}
+
+.usac-text h3 {
+  margin-bottom: 10px;
+}
+
+.usac-text p {
+  color: #9ca3af;
+  margin-bottom: 20px;
+}
+
+.usac-text ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.usac-text li {
+  position: relative;
+  padding-left: 18px;
+  margin-bottom: 10px;
+  color: #d1d5db;
+}
+
+.usac-text li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #22d3ee;
+}
+
+/* IMAGE */
+.usac-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.usac-image::before {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: #22d3ee;
+  filter: blur(120px);
+  opacity: 0.15;
+  border-radius: 50%;
+}
+
+.usac-image img {
+  position: relative;
+  z-index: 1;
+  max-width: 450px;
+  border-radius: 12px;
+  border: 1px solid rgba(34, 211, 238, 0.3);
+}
+
+/* 🔥 ADVANCED GRID */
+.advanced-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  max-width: 1100px;
+  margin: 0 auto 70px auto;
+}
+
+.advanced-card {
+  background: #111827;
+  padding: 18px;
+  border-radius: 12px;
+  border: 1px solid #1f2937;
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.advanced-card:hover {
+  transform: translateY(-6px);
+  border-color: #22d3ee;
+}
+
+.advanced-card p {
+  color: #9ca3af;
+  font-size: 0.85rem;
+  margin-top: 8px;
+}
+
+/* FOOTER */
+.realworld-footer {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.realworld-footer p {
+  font-size: 1.1rem;
+  color: #22d3ee;
+  letter-spacing: 1px;
+}
+
+
+
+/* 🔥 ADVANCED HEADER */
+.advanced-header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 40px auto;
+}
+
+.advanced-header h3 {
+  font-size: 1.6rem;
+  margin-bottom: 8px;
+}
+
+.advanced-header p {
+  color: #9ca3af;
+  font-size: 0.95rem;
+}
+
+/* 🔥 WORKING SECTION */
+.realworld-working {
+  max-width: 900px;
+  margin: 60px auto 0 auto;
+  text-align: center;
+}
+
+.realworld-working h3 {
+  margin-bottom: 10px;
+}
+
+.realworld-working p {
+  color: #9ca3af;
+}
+
+
+
+
+.conclusion-section {
+  padding: 90px 40px;
+  background: #020617;
+  color: white;
+  font-family: Poppins;
+  text-align: center;
+}
+
+/* HEADER */
+.conclusion-header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+/* CONTENT */
+.conclusion-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.conclusion-content p {
+  color: #9ca3af;
+  margin-bottom: 20px;
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+/* 🔥 FINAL HIGHLIGHT */
+.conclusion-highlight {
+  margin-top: 50px;
+  position: relative;
+}
+
+.conclusion-highlight p {
+  font-size: 1.2rem;
+  color: #22d3ee;
+  font-weight: 500;
+  letter-spacing: 1px;
+  animation: glowPulse 2.5s infinite alternate;
+}
+
+@keyframes glowPulse {
+  from {
+    text-shadow: 0 0 5px rgba(34, 211, 238, 0.3);
+  }
+  to {
+    text-shadow: 0 0 5px rgba(34, 211, 238, 0.8);
+  }
+}
+
+/* GLOW EFFECT */
+.conclusion-highlight::before {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 100px;
+  background: #22d3ee;
+  filter: blur(120px);
+  opacity: 0.2;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -20px;
+  z-index: 0;
+}
+
+.conclusion-highlight p {
+  position: relative;
+  z-index: 1;
+}

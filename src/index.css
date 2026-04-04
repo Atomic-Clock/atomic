@@ -70,3 +70,17 @@ button:focus-visible {
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+/* @keyframes waveMove {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.animate-wave {
+  animation: waveMove 10s linear infinite;
+} */

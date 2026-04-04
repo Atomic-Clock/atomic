@@ -66,9 +66,31 @@
 //     ],
 //   },
 // ]);
+
+
+// import { createBrowserRouter } from "react-router-dom";
+// import DashboardLayout from "./layout/DashboardLayout";
+// import Home from "../Pages/Home/Home";
+// import Learn from "../Pages/Learn/Learn";
+
+// export const router = createBrowserRouter([
+//   {
+//     path: "/",
+//     element: <DashboardLayout />,
+//     children: [
+//       {
+//         index: true,
+//         element: <Home />, 
+//       },
+//     ],
+//   },
+// ]);
+
+
 import { createBrowserRouter } from "react-router-dom";
 import DashboardLayout from "./layout/DashboardLayout";
 import Home from "../Pages/Home/Home";
+import Learn from "../Pages/Learn/Learn";
 
 export const router = createBrowserRouter([
   {
@@ -78,6 +100,10 @@ export const router = createBrowserRouter([
       {
         index: true,
         element: <Home />,
+      },
+      {
+        path: "learn",
+        element: <Learn />,
       },
     ],
   },

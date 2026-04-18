@@ -134,7 +134,7 @@ const [open, setOpen] = useState(false);
         </NavLink>
 
         <NavLink
-          to="/simulate"
+          to="/simulation"
           className={({ isActive }) =>
             `p-2 rounded transition flex items-center ${open ? "gap-3 justify-start" : "justify-center"} ${
               isActive ? "bg-blue-600 text-white" : "hover:bg-gray-800"

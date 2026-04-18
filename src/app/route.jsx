@@ -87,10 +87,35 @@
 // ]);
 
 
+// import { createBrowserRouter } from "react-router-dom";
+// import DashboardLayout from "./layout/DashboardLayout";
+// import Home from "../Pages/Home/Home";
+// import Learn from "../Pages/Learn/Learn";
+// import Simulation from "../Pages/Simulation/Simulation";
+
+// export const router = createBrowserRouter([
+//   {
+//     path: "/",
+//     element: <DashboardLayout />,
+//     children: [
+//       {
+//         index: true,
+//         element: <Home />,
+//       },
+//       {
+//         path: "learn",
+//         element: <Learn />,
+//       },
+//     ],
+//   },
+// ]);
+
+
 import { createBrowserRouter } from "react-router-dom";
 import DashboardLayout from "./layout/DashboardLayout";
 import Home from "../Pages/Home/Home";
 import Learn from "../Pages/Learn/Learn";
+import SimulatePage from "../Pages/Simulation/SimulatePage";
 
 export const router = createBrowserRouter([
   {
@@ -104,6 +129,10 @@ export const router = createBrowserRouter([
       {
         path: "learn",
         element: <Learn />,
+      },
+      {
+        path: "simulation", 
+        element: <SimulatePage />,
       },
     ],
   },

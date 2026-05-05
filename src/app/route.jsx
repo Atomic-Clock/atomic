@@ -117,6 +117,7 @@ import Home from "../Pages/Home/Home";
 import Learn from "../Pages/Learn/Learn";
 import SimulatePage from "../Pages/Simulation/SimulatePage";
 import About from "../Pages/About/About";
+import TrainingMode from "../Pages/Training/TrainingMode";
 
 export const router = createBrowserRouter([
   {
@@ -135,10 +136,15 @@ export const router = createBrowserRouter([
         path: "simulation", 
         element: <SimulatePage />,
       },
-            {
+      {
         path: "about", 
         element: <About />,
       },
+      {
+        path: "training", 
+        element: <TrainingMode />,
+      },
+
     ],
   },
 ]);

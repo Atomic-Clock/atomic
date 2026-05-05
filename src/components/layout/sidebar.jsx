@@ -172,6 +172,19 @@ const [open, setOpen] = useState(false);
           {open && "Stability Analyzer"}
         </NavLink>
 
+        <NavLink
+          to="/about"
+          className={({ isActive }) =>
+            `p-2 rounded transition flex items-center ${open ? "gap-3 justify-start" : "justify-center"} ${
+              isActive ? "bg-blue-600 text-white" : "hover:bg-gray-800"
+            }`
+          }
+        >
+          {/* <span>🧾</span> */}
+          <span className="text-lg w-6 text-center">🧾</span>
+          {open && "About"}
+        </NavLink>
+
       </div>
     </aside>
   );

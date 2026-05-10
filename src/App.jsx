@@ -39,7 +39,7 @@ function App() {
   return (
     <div className="bg-[#0b0f1a] text-white min-h-screen flex items-center justify-center">
       <h1 className="text-4xl font-bold">
-        USAC Virtual Lab 🚀
+        Atomic Insight AI
       </h1>
     </div>
   )

@@ -135,9 +135,9 @@ import { motion } from "framer-motion";
 export default function ConceptsCards() {
   const items = [
     {
-      title: "USAC Virtual Lab",
+      title: "Atomic Insight AI",
       shortDesc: "Explore ultra-stable atomic clocks & simulations.",
-      longDesc: `The USAC Virtual Lab provides interactive simulations to study atomic clocks, lasers, and wavelength measurements. 
+      longDesc: `Atomic Insight AI provides interactive simulations to study atomic clocks, lasers, and wavelength measurements. 
       Students and researchers can experiment with timekeeping and measurement principles without physical lab equipment. 
       It helps develop a deep understanding of ultra-precise time systems and their applications in navigation, communication, and science.`,
       icon: (

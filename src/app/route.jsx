@@ -118,6 +118,7 @@ import Learn from "../Pages/Learn/Learn";
 import SimulatePage from "../Pages/Simulation/SimulatePage";
 import About from "../Pages/About/About";
 import TrainingMode from "../Pages/Training/TrainingMode";
+import ChatbotPage from "../Pages/Chatbot/ChatbotPage";
 
 export const router = createBrowserRouter([
   {
@@ -143,6 +144,10 @@ export const router = createBrowserRouter([
       {
         path: "training", 
         element: <TrainingMode />,
+      },
+      {
+        path: "chatbot", 
+        element: <ChatbotPage />,
       },
 
     ],
